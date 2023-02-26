@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeTitle"
+        android:text="Recipe Title"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientsLabel"
+        android:text="Ingredients:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/recipeTitle"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeIngredients"
+        android:padding="16dp"
+        android:layout_below="@id/ingredientsLabel"
+        android:text="Ingredient 1\nIngredient 2\nIngredient 3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionLabel"
+        android:text="Instructions:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_below="@id/recipeIngredients" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeInstructions"
+        android:text="Step 1\nStep 2\nStep 3"
+        android:layout_below="@id/instructionLabel"
+        android:padding="16dp" />
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:id="@+id/recipeImage"
+        android:layout_below="@id/recipeTitle"
+        android:layout_marginLeft="500px"
+        android:src="@drawable/img" />
+
+    <RatingBar
+        android:id="@+id/recipeRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeInstructions"
+        android:layout_centerHorizontal="true"
+        android:progressTint="#FF5722"
+        android:progressBackgroundTint="#2DFF5722"
+        />
+
+</RelativeLayout>
+
+    <!--
+
+    1. Dark Theme
+    2. Original Recipe
+    3. change fonts
+
+    -->
