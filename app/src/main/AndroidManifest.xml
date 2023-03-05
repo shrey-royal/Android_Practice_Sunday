@@ -18,7 +18,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Music_Player"
+            android:name=".Basic_Calc"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
