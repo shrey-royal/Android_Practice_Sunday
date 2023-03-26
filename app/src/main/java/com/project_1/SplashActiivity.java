@@ -20,7 +20,7 @@ public class SplashActiivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActiivity.this, Recipe_App.class);
+                Intent i = new Intent(SplashActiivity.this, CurrencyConvert.class);
                 startActivity(i);
                 finish();
             }
